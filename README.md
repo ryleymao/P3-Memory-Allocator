@@ -1,7 +1,7 @@
 # pa4-malloc
 Project imported from my school github account
 
-PA4 Resubmission – Malloc
+Project 4 – Malloc
 
 This assignment is thanks to the staff of CSE29 spring 2024, especially Gerald Soosairaj and Jerry Yu.
 
