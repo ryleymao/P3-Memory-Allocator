@@ -2,10 +2,10 @@ Project 3: Memory Allocator (Malloc)
 
 This project is a custom implementation of a simplified dynamic memory allocator in C, modeled after how malloc and free work in standard C libraries. The goal is to simulate memory allocation and freeing while exploring how real allocators manage heap space, perform coalescing, and avoid fragmentation.
 
-It was developed as part of a systems programming course and focuses on low-level memory concepts, pointer arithmetic, bitwise operations, and writing C code that manipulates memory manually. This assignment was made possible thanks to the staff of CSE29 Spring 2024, especially Gerald Soosairaj and Jerry Yu.
+It was developed as part of a systems programming course and focuses on low-level memory concepts, pointer arithmetic, bitwise operations, and writing C code that manipulates memory manually.
 
 Overview
-You will implement two core functions:
+Implement two core functions:
 
 void *vmalloc(size_t size);
 This function allocates a block of memory from a fixed-size heap, similar to malloc.
@@ -47,9 +47,6 @@ If multiple blocks share the largest size, the one with the smallest ID is chose
 
 This allows for better debugging and visualization of the heap state.
 
-Updated Design Question
-In the current design, when a block is freed, it is coalesced with both its previous and next free neighbors. Consider a different strategy where the block is only coalesced with its next free block (not the previous). You must describe a C or pseudocode program where all allocations succeed in the current implementation, but some would fail with this one-sided coalescing strategy. This demonstrates the importance of full coalescing in managing heap fragmentation.
-
 Core Concepts Practiced
 Manual memory management
 
@@ -76,5 +73,3 @@ The allocator must work on the ieng6 servers using the provided environment. All
 
 Summary
 This project provides practical experience in building a memory allocator from scratch, similar to malloc and free, focusing on correctness, efficiency, and memory reuse. It emphasizes understanding of how memory is managed at a low level and helps reinforce important systems programming concepts.
-
-Let me know if you'd like it formatted for GitHub preview or want to include usage examples!
