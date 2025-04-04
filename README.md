@@ -1,4 +1,4 @@
-Project 3: Memory Allocator
+Project 3: Memory Allocator (Malloc)
 
 This project is a custom implementation of a simplified dynamic memory allocator in C, modeled after how malloc and free work in standard C libraries. The goal is to simulate memory allocation and freeing while exploring how real allocators manage heap space, perform coalescing, and avoid fragmentation.
 
